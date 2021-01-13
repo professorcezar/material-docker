@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.post('/add', function (req, res) {
-  mongoose.connect("mongodb://admin:123456@localhost:27017", { dbName: "manager", useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
+  mongoose.connect("mongodb://admin:123456@mongodb:27017", { dbName: "manager", useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
 
     var newItem = new Item({"description": req.body.desc});
 
@@ -32,7 +32,7 @@ app.post('/add', function (req, res) {
 });
 
 app.get('/list', function (req, res) {
-  mongoose.connect("mongodb://admin:123456@localhost:27017", { dbName: "list", useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
+  mongoose.connect("mongodb://admin:123456@mongodb:27017", { dbName: "list", useNewUrlParser: true, useUnifiedTopology: true}, function (err) {
     
     if (err) throw err;
 
