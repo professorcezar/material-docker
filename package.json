@@ -1,0 +1,19 @@
+{
+  "name": "list-manager",
+  "version": "1.0.0",
+  "description": "List Manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Vladimir Cezar",
+  "license": "MIT",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "mongoose": "^5.7.6"
+  }
+}
